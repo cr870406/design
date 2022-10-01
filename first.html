@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/013124f386.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 40
+}
+            .header{
+                background-color:#212526;
+                
+            }
+
+            .container1{
+                display: flex;
+                padding: 20px 0;
+                max-width: 1500px;
+                margin: auto;
+                align-items: center;
+              justify-content: center;
+             
+            }
+            
+
+            .pic1{
+                width: 100px;
+                border-radius: 50%;
+                margin-right: 50px;  
+                overflow: hidden;
+                
+            }
+            .pic1 img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            .nav{
+               
+                display: flex;
+            }
+            .nav a{
+                text-decoration: none;
+                padding: 5px 2em;
+                color: white;
+                font-size: 30px;
+                position: relative;
+                transform: translateY(0);
+                transition: .3s;
+                
+            }
+            .nav a:hover{
+                transform: translateY(-5px);
+            }
+            .nav a:after{
+                content: "";
+                position: absolute;
+                border-bottom: 1px solid white;
+                left: 50%;
+                right: 50%;
+                bottom: -5px;
+                transition: .3s;
+
+            }
+            .nav a:hover:after{
+                left: 0;
+                right: 0;
+            }
+
+
+            .search{
+                display: flex;
+                margin-left: 50px;
+            }
+            .search input,
+            .search button{
+                border: none;
+                background-color: rgb(255, 255, 255);
+                padding: 5px 10px;   
+            }
+            .search input{
+                border-radius: 200px 0 0 200px;
+                
+            }
+            .search button{
+                border-radius: 0 200px 200px 0;
+            }
+            .search input:focus,
+            .search button:focus{
+             outline: none;
+            }
+            /*NO.1*/
+
+        .banner{
+            width: 100%;
+            height: 600px;
+            background-color: rgb(198, 236, 223);
+            background: linear-gradient(115deg, rgb(120, 114, 113) 50%, transparent 50%),
+            url("kam-idris-_HqHX3LBN18-unsplash.jpg") center center/cover
+        }
+        .container{
+            height: 100%;
+            width: 1500px;
+            margin: auto;
+        }
+        .bannet-text{
+            width: 700px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(29, 29, 29);
+
+        }
+        .bannet-text h1{
+            font-size: 70px;
+            border-bottom: 1px solid ;
+            padding-bottom: .3em;
+            margin-bottom: .3em;
+            font-weight: 900;
+        }
+        .bannet-text h1 small{
+            display: block;
+            font-size: 53px;
+            font-weight: 700;
+        }
+        .bannet-text p{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        /*NO.2*/
+        .main-title{
+                    margin: 50px 0;
+                
+                }
+
+                .main-title .container{
+                    width: 1200px;
+                    margin: auto;
+                    text-align: center;
+                }
+                .main-title .container h1{
+                    width: 100%;
+                    box-sizing: border-box;
+                    font-size: 60px;
+                    color: rgb(0, 0, 0);
+                    font-weight: 700;
+                }
+
+                .main-title .container .txt{
+                    position: relative;
+                    box-sizing: border-box;
+                }
+                .main-title .container h1:before,
+                .main-title .container h1::after{
+                    content: '';
+                    height: 2px;
+                    width: 200px;
+                    background-color: #aaa;
+                    display: block;
+                    margin: auto;
+                    flex-grow: 1;
+                }
+                .main-title .container h1:before{
+                    margin-right: .5em;
+                }
+                .main-title .container h1:after{
+                    margin-left: .5em;
+                }
+                .main-title .container h1{
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+
+                .main-title .container .txt p{
+                    margin-bottom: 1em;
+
+                    
+                }
+                .main-title .container .txt p:first-child::first-letter{
+                    font-size: 40px;
+                    float: left;
+                }
+            /*NO.3*/
+                .fish{
+                display: flex;
+                width: 1200px;
+                margin: 50px auto;
+                
+                padding-top: 75px;
+            }
+            .fish .item{ 
+                width: 400px;
+                margin: 0 15px;
+                box-sizing: border-box;
+                text-align: center;
+                border: 10px solid #676767;
+                background-color: white;
+                border-radius: 20px;
+            }
+            .fish .item h3{ 
+                color: #393939;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            .fish .item h3::after{
+                content: "";
+                width: 100%;
+                margin: auto;
+                height: 1px;
+                background-color: #676767;
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .fish .item p{ 
+                color: rgb(112, 111, 111);
+            }
+            .fish .item .txt{ 
+                padding: 20px;
+            }
+            .fish .item .icon{ 
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                margin: -50px auto 0 ;
+                line-height: 110px;
+                border-radius: 50%;
+                color: #676767;
+                position: relative;
+            }
+            .fish .item .icon::before{ 
+                content: "";
+                border-top: 10px solid #676767;
+                border-left: 10px solid transparent;
+                border-right: 10px solid #676767;
+                border-bottom: 10px solid transparent;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                border-radius: 50%;
+                transform: rotate(-45deg);
+            }
+
+            @keyframes ss{
+                0%{ transform:rotate(-10deg);   }
+                100%{ transform:rotate(10deg);   }
+            }
+            .fish .item:hover .material-symbols-outlined{
+                animation: ss .3s linear infinite alternate;
+            }
+            /*NO.4*/
+            .studen{
+                display: flex;
+                align-items: center;
+            }
+            .studen .container{ 
+                width: 1200px;
+                display: flex;
+                margin: auto;
+
+            }
+            .studen .item{ 
+                width: 370px;
+                margin: 0 15px;
+                display: flex;
+                background-color: white;
+                border: 1px solid rgb(143, 143, 143);
+                box-shadow: 0 10px 30px rgba(0,0,0,.3);
+            }
+            .studen .item .pic{
+                width: 50%;
+
+            }
+            .studen .item .pic img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .studen .item .txt{
+                width: 50%;
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                justify-content: left;
+            }
+            .studen .item .txt h2{}
+            .studen .item .txt p{}
+            .studen .item .txt .btn{
+                line-height: 1.5em;
+                border: 1px solid #ccc;
+                padding: 0 1em;
+                align-self: flex-end;
+                text-decoration: none;
+                border-radius: 200px;
+                margin-top: 1em;
+                color: #ccc;
+                position: absolute;
+                bottom: 1em;
+                right: 1em;
+            }
+
+            .studen .item .txt .btn:hover{
+                background-color: #ccc;
+                color: white;
+            }
+            /*NO.5*/
+            .user{
+            width: 1200px;
+            display: flex;
+            margin: auto;
+        }
+
+        .user .item{
+            width: 370px;
+            margin: 15px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(150, 150, 150);
+            transition: .3s;
+        }
+        .user .item img{
+            height: 300px;
+            width: 100%;
+            vertical-align: middle;
+            
+            
+        }
+        .user .item h2{
+            border-bottom: 1px solid ;
+            padding-bottom: .3em ;
+            margin-bottom: .4em;
+        }
+        .user .item p{
+            line-height: 1.6;
+        }
+        .user .item .text{
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .user .item .text:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-left: 184px solid white;
+            border-right: 184px solid white;
+            transform: translateY(-100%);
+        }
+
+        .user .item:hover {
+            transform: translateY(-50px);
+            
+        }
+        .user .item:hover .text{
+            background-image: linear-gradient(0deg,rgb(68, 68, 68),rgb(99, 99, 99));
+        }
+        .user .item:hover .text:before{
+            border-left: 184px solid rgb(99, 99, 99);
+            border-right: 184px solid rgb(99, 99, 99);  
+        }
+        .user .item:hover h2{
+            color: white;
+        }
+        .user .item:hover p{
+            color: white;
+        }
+            /*NO.6*/
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+            }
+
+            .main-footer .container{ 
+                display: flex;
+                width: 1200px;
+                margin: auto;
+            }
+
+            .footer-item{ 
+                width: 300;
+                flex-grow: 1;
+                margin: 0 40px;
+            }
+            .footer-item1{
+                width: 400px;
+
+            }
+            .footer-item1 p{
+                color: white;
+                line-height: 1.5em;
+            }
+            .footer-item1{
+                color: white;
+            }
+            .footer-item nav{ 
+                display: flex;
+                flex-direction: column;
+            }
+            .footer-item nav a{ 
+                color: white;
+                line-height: 1.4;
+                text-decoration: none;
+                padding: 5px 0;
+            }
+            .footer-item h4{ 
+                font-size: 24px;
+                color: white;
+                border-bottom: 1px dotted white;
+                margin-bottom: .5em;
+                padding-bottom: .5em;
+            }
+
+            .main-footer{ 
+                padding: 150px 0 0;
+                background-color: #212526;
+            
+            }
+            .spc{
+                display: flex;
+                flex-direction: column;
+            }
+            .spc form{
+                display: flex;
+                margin: auto 0;
+                width: 100%;
+            }
+            .spc input[type="text"],
+            .spc input[type="submit"]{
+                border: none;
+                padding: 5px 10px;
+            }
+
+            .spc input[type="text"]{width: 0;flex-grow: 1;}
+            .spc input[type="submit"]{color: white;background-color: #343839;}
+            .conypyright{ 
+                width: 100%;
+                margin:150px 0 0 ;
+                text-align: center;
+                padding: 10px 0;
+                background-color: #212526;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container1">
+            <div class="pic1">
+            <img src="abstract-bar-code-t-shirt.png" alt="">
+            </div>
+        <nav class="nav">
+            <a href="#">商業</a>
+            <a href="#">住宅</a>
+            <a href="#">關於</a>
+            <a href="#">聯絡我們</a>
+        </nav>
+        <form class="search">
+            <input type="search">
+            <button><span class="material-symbols-outlined">search</span></button>
+        </form>
+    </div>
+    </header>
+    <!--NO.1-->
+    <div class="banner">
+        <div class="container">
+            <div class="bannet-text">
+                <h1>將設計融於人性 <small>將家居帶入悠閒自在的情境</small></h1>
+                <p>人為生活而設計，設計為生活而存在。</p>
+
+            </div>
+        </div>
+    </div>
+    <!--NO.2-->
+    <div class="main-title">
+        <div class="container">
+            <h1>以人為本</h1>
+            <div class="txt">
+                <p>室內設計工作者就好比是做衣服的裁縫，每個人的身材、身高、胖和瘦、對於美麗的標準是不一樣的。首先是如何使衣服穿著合身又舒適；其次是如何使客人喜歡的風格、顏色、外觀看起來更美觀大方。所謂美的標準，不是設計師自己的審美，而是客人的審美。
+                    在接受客人委託的室內設計專案後，首先要到客人的住處仔細觀察，比如傢俱、地點、空間使用的主題等。
+                    有些客人特別注意廚房設計;有些人特別喜歡浴室;女主人需要擺放衣物鞋帽的空間越微妙，越注意記在心裡。
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--NO.3-->
+    <div class="fish">
+        <div class="item">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    draw
+                    </span>
+            </div>
+            <div class="txt">
+                <h3>設計階段</h3>
+                <p>提出所有可能發生的問題，並由設計師協助解決，這樣在接下來的工程項目，才能夠避免太多臨時的突發狀況，導致工程延宕或是必須增加預算的問題。這個階段是最燒腦的，因為有非常多大小問題需要業主們作決定，千萬要耐心地的慎考慮，才不會影響未來的生活。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    construction
+                    </span>
+            </div>
+            <div class="txt">
+                <h3>裝修工程進場</h3>
+                <p>當所有的圖面討論都確認無誤，就到了各項工種師傅們大顯身手的時候啦！室內裝修有各式各樣的工種，會配合哪些工種施作就取決於設計階段安排了什麼。一般來說常遇到的有拆除、泥作、木作、水電、空調、木地板、玻璃、系統櫃廚具、清潔等等，先後順序就要交給專業設計師及監工團隊來安排處理啦！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <span class="material-symbols-outlined">
+                    chair
+                    </span>
+            </div>
+            <div class="txt">
+                <h3>完工家具進場</h3>
+                <p>當裝修現場都清潔完畢，就到了家具、家電入厝的時間了。一般都會在設計及工程階段，開始和設計師討論和挑選物品，避免發生風格衝突或者尺寸不合等尷尬問題。
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--NO.4-->
+    <div class="main-title">
+        <div class="container">
+            <h1>材質選擇</h1>
+            <div class="txt">
+
+            </div>
+        </div>
+    </div>
+    <!--NO.文字區-->
+    <div class="studen">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="pexels-karolina-grabowska-6634138.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2>大理石</h2>
+                    <p>透過敲擊石材方式觀察材質的密度，可用一元硬幣輕敲，聲音較清脆的表示硬度、密度較高，抗磨性較好、吸水率較小。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+        
+        
+            <div class="item">
+                <div class="pic">
+                    <img src="pexels-max-vakhtbovych-6585750.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2>木作櫃體</h2>
+                    <p>木作櫃通常較系統櫃的變化度高且較細緻，可以說是完全客製化訂製，價格通常較系統櫃高，但需要由技術純熟的木工師傅製作。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+       
+      
+            <div class="item">
+                <div class="pic">
+                    <img src="pexels-jean-van-der-meulen-1457847.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2>衛浴設備</h2>
+                    <p>浴室潮濕度比其他空間相對高，因此一般的浴櫃會選用發泡板 V.S 美耐板兩種材質。</p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NO.5-->
+    <div class="main-title">
+        <div class="container">
+            <h1>完成案例</h1>
+            <div class="txt">
+
+            </div>
+        </div>
+    </div>
+    <!--NO.文字區-->
+    <div class="user">
+        <div class="item">
+                <img src="http://www.cheng-qi.com/images/portfolio/r010/portfolio-item-r10-7.jpg" alt="">
+            <div class="text">
+                <h2>板橋張公館</h2>
+                <p>客廳使用不同尺寸的雕刻板交錯編排，並搭配與電視主牆紋理個性明顯的大理石材相互協調的淡雅灰白色系漆以及香檳色金屬條，讓表面呈現低調奢華的感覺。電視牆上方上升天花使用明鏡，在視覺上提升了空間的高度，在線條細膩的空間中，灰色大片磚和胡桃木地板，延伸了石材牆面的表情。</p>
+            </div>
+            </div>
+            <div class="item">
+                <img src="http://www.cheng-qi.com/images/portfolio/r009/portfolio-item-r9-3.jpg" alt="">
+                <div class="text">
+                    <h2>內湖辦公大樓</h2>
+                    <p>本案基地方位坐西朝東。西側面山，東側視野開闊。案件為高樓層樓中樓格局。原先屋主曾經移動屋內樓梯，並將原有挑空區域填平改造成房間。雖然屋內使用面積增加，但採光與通風也因為隔間的更改變得陰暗，每一個房間將門關起來後，明明是在山邊，卻無法享受到新鮮空氣的流動。</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.cheng-qi.com/images/portfolio/r008/portfolio-item-r8-5.jpg" alt="">
+                <div class="text">
+                    <h2>松山住宅區</h2>
+                    <p>隨著時代演變，現代住宅的人口構成越來越單純。生活上更注重健康與心靈層面的富饒。而當主人特意用書牆來取代電視牆，將室內寶貴的空間安排成健身房。這樣的室內設計目標除了要營造幸福的生活感之外，還要讓主人在這個空間裡，感覺到時間利用上變得餘裕，感受到身心靈的成長。</p>
+                 </div>
+                </div>
+             
+        </div>
+    <!--NO.6-->
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-item1">
+                <p>室內設計絕對是一門學問，而且所包含的項目很廣，舉凡在室內所想得到的一切都包含在內。當我們提到室內設計時，涉及的範圍包括天花板、地板、門、窗、牆壁乃至於各項器物等，從室內的動線、空間、家具擺設、色彩、照明、功能...以至於每一個地方的尺寸、顏色、材料及設計的實用度、美感等。室內設計是從建築設計中的裝飾部分演變出來的，需要工程技術上的知識，也需要藝術上的理論和技能。室內設計的學問實在是太多了，尤其香港地少人多，家居空間越來越細小，如何有效運用空間而不感擠迫實在不容易，對於室內設計師們絕對是一項挑戰。</p>
+            </div>
+
+                <div class="footer-item">
+                    <h4>COMPANY NAME</h4>
+                    <nav>
+                        <a href="#">廣告合作</a>
+                        <a href="#">公司介紹</a>
+                        <a href="#">聯絡我們</a>
+                        <a href="#">隱私權政策</a>
+                    </nav>
+                </div>
+                <div class="footer-item spc">
+                    <h4>訂閱電子報</h4>
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="訂閱">
+                    </form>
+                </div>  
+        </div>
+        <div class="conypyright">
+            Conypyright &copy; 2022
+            arnestone All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>
